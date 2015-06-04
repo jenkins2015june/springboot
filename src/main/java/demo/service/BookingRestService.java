@@ -23,4 +23,11 @@ public class BookingRestService {
 		return this.bookingRepository.findAll();
 	}
 	
+	
+	@RequestMapping("/getbyid")
+	Booking getBookingbyID(Long id){
+		return this.bookingRepository.findOne(id);
+		
+	}
+	
 }
